@@ -3,8 +3,8 @@
 // written to /output/entry.txt (MAKEFUN_OUTPUT_DIR overrides /output outside the grader).
 // Gate: UTF-8 text of 1..200 characters, not only whitespace.
 // No setup, no dialogue tags: just the excuse itself, in the GPS's own voice.
-// The turn is the itemised list — river, fence, goat — each one more
-// damning than the last, delivered as if none of them counted.
+// The turn is the itemised list — river, fence, goat-that-now-owns-the-car —
+// each one more damning than the last, delivered as if none of them counted.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // Setup: the road really was shorter — on paper.
