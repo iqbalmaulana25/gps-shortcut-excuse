@@ -11,7 +11,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 const setup =
   "That road looked shorter on the map, and technically it was —";
 // Punchline: the small print the GPS left out.
-const punch = "if you don't count the river, the fence, or the goat.";
+const punch = "if you don't count the river, the fence, or the goat that now owns the car.";
 const entry = `${setup} ${punch}`;
 
 // Gate guard: single line, file content (entry + newline) within 1..200 chars.
