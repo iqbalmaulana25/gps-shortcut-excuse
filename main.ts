@@ -1,14 +1,18 @@
 // The GPS Swears It Was a Shortcut
-// Writes the GPS's one-line excuse for sending the driver down the wrong road
-// to /output/entry.txt (MAKEFUN_OUTPUT_DIR overrides /output outside the grader).
+// The GPS's one-line excuse for sending the driver down the wrong road,
+// written to /output/entry.txt (MAKEFUN_OUTPUT_DIR overrides /output outside the grader).
 // Gate: UTF-8 text of 1..200 characters, not only whitespace.
 // No setup, no dialogue tags: just the excuse itself, in the GPS's own voice.
 // The turn is the itemised list — river, fence, goat — each one more
 // damning than the last, delivered as if none of them counted.
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const entry =
-  "That road looked shorter on the map, and technically it was, if you don't count the river, the fence, or the goat.";
+// Setup: the road really was shorter — on paper.
+const setup =
+  "That road looked shorter on the map, and technically it was —";
+// Punchline: the small print the GPS left out.
+const punch = "if you don't count the river, the fence, or the goat.";
+const entry = `${setup} ${punch}`;
 
 // Gate guard: single line, file content (entry + newline) within 1..200 chars.
 if (entry.includes("\n") || entry.trim().length === 0 || entry.length + 1 > 200) {
