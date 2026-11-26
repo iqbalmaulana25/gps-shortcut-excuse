@@ -15,4 +15,4 @@ cat /output/entry.txt
 
 ## Entry
 
-> That road looked shorter on the map, and technically it was, if you don't count the river, the fence, or the goat.
+> On the map that road was shorter, and technically it still is — if you don't count the river, the fence, or the goat that now owns the car.

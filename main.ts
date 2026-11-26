@@ -9,7 +9,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 
 // Setup: the road really was shorter — on paper.
 const setup =
-  "That road looked shorter on the map, and technically it was —";
+  "On the map that road was shorter, and technically it still is —";
 // Punchline: the small print the GPS left out.
 const punch = "if you don't count the river, the fence, or the goat that now owns the car.";
 const entry = `${setup} ${punch}`;
